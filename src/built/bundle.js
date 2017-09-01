@@ -79,7 +79,7 @@ Object.keys(inp).forEach(el => {
     }, false);
 });
 
-function regSubmit() {
+document.getElementById('registrationSubmit').addEventListener('click', () => {
     let valid = true;
     Object.keys(inp).forEach(el => {
         if (inp[el].value == "") {
@@ -93,7 +93,7 @@ function regSubmit() {
     if (valid) {
         document.forms["registration-form"].submit();
     }
-}
+});
 
 /***/ })
 /******/ ]);
