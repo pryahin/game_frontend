@@ -10,10 +10,10 @@ branches:
 deploy:
   provider: heroku
   api_key:
-    secure: $key228
-  app: front228
+    secure: $key
+  app: gametes
   on:
-    repo: ilyamoskalev/CG
+    repo: pryahin/game_frontend
     branch: master
   skip_cleanup: true
 
