@@ -2,9 +2,7 @@ module.exports = {
 	entry: {
 		bundle: "./src/static/js/script.js"
 	},
-
-	watch: true,
-
+	
 	output: {
 		path: __dirname + '/src/built',
 		filename: "[name].js"
