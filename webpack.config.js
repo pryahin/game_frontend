@@ -1,6 +1,6 @@
 module.exports = {
 	entry: {
-		bundle: "./src/static/js/script.js"
+		bundle: "./src/index.js"
 	},
 	
 	output: {
@@ -22,6 +22,10 @@ module.exports = {
           				presets: ['es2015']
           				}      
           			}
+			},
+			{
+                test: /\.xml/,
+                loader: 'tp-fest-loader'
 			}
 		]
 	},
